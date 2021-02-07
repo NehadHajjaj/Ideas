@@ -9,7 +9,7 @@
         <StackLayout Orientation="Vertical" >
             <Grid HeightRequest="350"
                   HorizontalOptions="Center"
-                    
+                    WidthRequest="350"
                   
                   >
                 <Image Source= "image.png"
