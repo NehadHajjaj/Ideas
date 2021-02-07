@@ -29,8 +29,7 @@ namespace Project.Services
 
 			var content = await response.Content.ReadAsStringAsync();
 
-			JObject jwtDynamic = JsonConvert.DeserializeObject<dynamic>(content);
-
+			dynamic jwtDynamic = JObject.Parse(content);
 			var accessTokenExpiration = jwtDynamic.Value<DateTime>(".expires");
 			var accessToken = jwtDynamic.Value<string>("access_token");
 

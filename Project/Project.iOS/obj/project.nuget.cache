@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "k16Tw0AdxAYA8OEKp9xSaDg53IbHflfZzYRLL5UjJmEiylIt54qMguaj5QuNz1igsPmW6TeyZEO5eCQAobudxQ==",
+  "dgSpecHash": "wnFe/8sck15GfpUL2UUs0LH/xD+91Ko5xN9r5xoYmn5PcVHey0PXtVwjQpQNQbASHM8xQmLFmvhpIScungLJXg==",
   "success": true,
   "projectFilePath": "C:\\Data\\New folder (11)\\Project\\Project\\Project.iOS\\Project.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nehadh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\nehadh\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\nehadh\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",
     "C:\\Users\\nehadh\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Users\\nehadh\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"

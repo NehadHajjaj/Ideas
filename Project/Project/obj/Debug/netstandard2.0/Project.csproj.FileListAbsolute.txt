@@ -13,3 +13,18 @@ C:\Users\Noor\source\repos\Project\Project\Project\obj\Debug\netstandard2.0\Xaml
 C:\Users\Noor\source\repos\Project\Project\Project\obj\Debug\netstandard2.0\Project.dll
 C:\Users\Noor\source\repos\Project\Project\Project\obj\Debug\netstandard2.0\ref\Project.dll
 C:\Users\Noor\source\repos\Project\Project\Project\obj\Debug\netstandard2.0\Project.pdb
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\Project.AssemblyInfoInputs.cache
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\Project.AssemblyInfo.cs
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\Project.csproj.CoreCompileInputs.cache
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\Project.csprojAssemblyReference.cache
+C:\Data\New folder (11)\Project\Project\Project\bin\Debug\netstandard2.0\Project.deps.json
+C:\Data\New folder (11)\Project\Project\Project\bin\Debug\netstandard2.0\Project.dll
+C:\Data\New folder (11)\Project\Project\Project\bin\Debug\netstandard2.0\ref\Project.dll
+C:\Data\New folder (11)\Project\Project\Project\bin\Debug\netstandard2.0\Project.pdb
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\Project.dll
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\ref\Project.dll
+C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\Project.pdb
