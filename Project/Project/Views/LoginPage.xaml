@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            
+             xmlns:custom="clr-namespace:Project.NewFolder"
+             x:Class="Project.Views.LoginPage"
+            >
+    <StackLayout  Padding="3" BackgroundColor="White">
+        <StackLayout Orientation="Vertical" >
+            <Grid HeightRequest="350"
+                  HorizontalOptions="Center"
+                      WidthRequest="350"
+                  
+                  >
+                <Image Source= "image.png"
+       Aspect="AspectFit"
+       HorizontalOptions="Center" Margin="0,0,0,70"
+                       />
+                <Label Text="Welcome to SlClub" FontSize="Title"  HorizontalOptions="Center"
+                       Margin="0,180,0,0" />
+        <Label Text="Sign in" FontSize="Title" HorizontalOptions="Center"
+               Margin="0,230,0,0"></Label>
+            </Grid>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Spacing="15"  Margin="0,0,0,50">
+            <Grid HeightRequest="60"
+                  HorizontalOptions="Center"
+                      WidthRequest="320"
+                  >
+                
+                <custom:CustomEntry  
+                             CornerRadius="5"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="#EFEFEF"     
+                             FontSize="17"  
+                             HeightRequest="50"  
+                    BackgroundColor="#EFEFEF"
+                    
+                             Placeholder="Email or Phone number.."
+                             PlaceholderColor="#A1A1A1"
+                             TextColor="Black"  
+                             FontAttributes="Bold"
+                            
+                />
+            </Grid>
+            <Grid HeightRequest="60"
+                  HorizontalOptions="Center"
+                      WidthRequest="320"
+                  >
+                <custom:CustomEntry  
+                              CornerRadius="5"  
+                             IsCurvedCornersEnabled="True"  
+                                BorderColor="#EFEFEF"    
+                             FontSize="17"  
+                             HeightRequest="50" 
+                      BackgroundColor="#EFEFEF"
+                             Placeholder="Password"  
+                             PlaceholderColor="#A1A1A1"
+                             TextColor="Black"  
+                             FontAttributes="Bold"  
+                             WidthRequest="100"/>
+            </Grid>
+
+            <StackLayout Orientation="Vertical"
+                      Margin="0,0,0,0">
+
+                <Label  Text="Forgot password?" FontSize= "15"
+               HorizontalOptions="Center" TextDecorations="Underline"       />
+              
+               
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                      
+                         Spacing="12
+                         ">
+                <Grid HeightRequest="50"
+                  HorizontalOptions="Center"
+                      WidthRequest="180"
+                  >
+                    <Button BorderRadius="11"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="1"
+                            
+                x:Name="ShopIDSubmit1"
+                        TextColor="Black"
+                    BorderColor="#D9D9D9"
+                BackgroundColor="White"
+                        Text="SignIn" FontFamily="Regular" FontAttributes="Bold">
+                    </Button>
+
+                </Grid>
+
+
+                <Label Text="Create Account" FontSize= "20"
+                   HorizontalOptions="Center" FontAttributes="Bold" />
+                
+                <Grid HeightRequest="50"
+                  HorizontalOptions="Center"
+                      WidthRequest="180"
+                  >
+                    <Button BorderRadius="11"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="1"
+                x:Name="ShopIDSubmit2"
+                        TextColor="Black"
+                    BorderColor="#D9D9D9"
+                BackgroundColor="White"
+                        Text="SignUp">
+                        
+                    </Button>
+
+
+                </Grid>
+
+                <Grid HeightRequest="50"
+                  HorizontalOptions="Center"
+                      WidthRequest="180"
+                  >
+                    <Button BorderRadius="10"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="1"
+                x:Name="ShopIDSubmit3"
+                        TextColor="Black"
+                    BorderColor="#D9D9D9"
+                BackgroundColor="White"
+                        Text="Continue as guest">
+
+                    </Button>
+
+
+                </Grid>
+
+
+
+
+
+
+            </StackLayout>
+
+      
+       </StackLayout>
+
+
+
+     
+
+    </StackLayout>
+    
+</ContentPage>

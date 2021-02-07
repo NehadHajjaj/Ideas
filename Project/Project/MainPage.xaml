@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:Project.NewFolder"
+             x:Class="Project.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout  Padding="10">
+        <Entry TextColor="Red"
+                   PlaceholderColor="#7AB0DE"
+                   Placeholder="Normal Entry" />
+
+
+        <custom:CustomEntry  
+                             CornerRadius="18"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="Black"      
+                             HorizontalTextAlignment="Center"  
+                             FontSize="17"  
+                             HeightRequest="40"  
+                             Placeholder="Custom Entry"  
+                             PlaceholderColor="Gray"  
+                             TextColor="Black"  
+                             FontAttributes="Bold"  
+                             WidthRequest="100"/>
+        <custom:CustomEntry  
+                             CornerRadius="18"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="Black"      
+                             HorizontalTextAlignment="Center"  
+                             FontSize="17"  
+                             HeightRequest="40"  
+                             Placeholder="Custom Entry"  
+                             PlaceholderColor="Gray"  
+                             TextColor="Black"  
+                             FontAttributes="Bold"  
+                             WidthRequest="100"/>
+
+    </StackLayout>
+
+
+
+</ContentPage>
