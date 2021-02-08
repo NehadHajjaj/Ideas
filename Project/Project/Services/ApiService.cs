@@ -24,7 +24,8 @@ namespace Project.Services
 
 			request.Content = new FormUrlEncodedContent(keyValues);
 
-			var client = new HttpClient();
+			//var client = new HttpClient();
+			var client = new HttpClient(new System.Net.Http.HttpClientHandler());
 			var response = await client.SendAsync(request);
 
 			var content = await response.Content.ReadAsStringAsync();

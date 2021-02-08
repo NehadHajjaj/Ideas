@@ -1,26 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Data\\New folder (11)\\Project\\Project\\Project\\Project.csproj": {}
+    "C:\\application\\Project\\Project\\Project.csproj": {}
   },
   "projects": {
-    "C:\\Data\\New folder (11)\\Project\\Project\\Project\\Project.csproj": {
+    "C:\\application\\Project\\Project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Data\\New folder (11)\\Project\\Project\\Project\\Project.csproj",
+        "projectUniqueName": "C:\\application\\Project\\Project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "C:\\Data\\New folder (11)\\Project\\Project\\Project\\Project.csproj",
-        "packagesPath": "C:\\Users\\nehadh\\.nuget\\packages\\",
-        "outputPath": "C:\\Data\\New folder (11)\\Project\\Project\\Project\\obj\\",
+        "projectPath": "C:\\application\\Project\\Project\\Project.csproj",
+        "packagesPath": "C:\\Users\\Noor\\.nuget\\packages\\",
+        "outputPath": "C:\\application\\Project\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\nehadh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Users\\Noor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -28,8 +25,6 @@
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },

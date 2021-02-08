@@ -5,38 +5,88 @@
              x:Class="Project.MainPage"
              BackgroundColor="White">
 
-    <StackLayout  Padding="10">
-        <Entry TextColor="Red"
-                   PlaceholderColor="#7AB0DE"
-                   Placeholder="Normal Entry" />
+    <StackLayout  Padding="3" BackgroundColor="White">
+        <StackLayout Orientation="Vertical" >
+            <Grid HeightRequest="400"
+                  HorizontalOptions="Center"
+                      WidthRequest="380"
+                 
+                  
+                  >
+                <Image Source= "image.png"
+       Aspect="AspectFit"
+       HorizontalOptions="Center" Margin="0,0,0,70"
+                       />
+                <Label 
+                    Text=" We welcome dreamers and open doors for them
+"
+                       FontSize="17"  HorizontalOptions="Center"
+                    MaxLines="2"
+                       Margin="0,250,0,0" FontAttributes="Bold" />
+                <Label 
+                    Text=" - Mohammed bin Salman.
+"
+                       FontSize="17" 
+                    MaxLines="2"
+                       Margin="0,270,0,0" Padding="5,0,0,0" FontAttributes="Bold" />
+            </Grid>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" >
+                    <Grid HeightRequest="400"
+                  HorizontalOptions="Center"
+                      WidthRequest="350"
+                 
+                          
+                  
+                  >
+
+  <Label Text="Our goal is to help students write their invention
+ and preserve their rights by registering those 
+ideas and projects in their names as inventors " 
+         FontSize="16"
+         HorizontalOptions="Center"
+               Margin="0" FontAttributes="Bold" ></Label>
+                
+                <Label Text="with the addition of some constructive idea"
+         FontSize="16"
+         HorizontalOptions="Center"
+               Margin="0,57,0,0" FontAttributes="Bold" Padding="0,0,10,0" ></Label>
+                        
+                <Label Text="that will be shared by faculty members, "
+         FontSize="16"
+         HorizontalOptions="Center"
+               Margin="0,75,0,0" FontAttributes="Bold" Padding="0,0,20,0" ></Label>
+                <Label Text="advisors, and experts to make this idea" FontSize="16"
+         HorizontalOptions="Center"
+               Margin="0,93,0,0" FontAttributes="Bold" Padding="0,0,13,0" ></Label>
+
+                <Label Text="successful and implementable.." FontSize="16"
+         HorizontalOptions="Center"
+               Margin="0,113,0,0" FontAttributes="Bold" ></Label>
+
+            </Grid>
+        </StackLayout>
 
 
-        <custom:CustomEntry  
-                             CornerRadius="18"  
-                             IsCurvedCornersEnabled="True"  
-                             BorderColor="Black"      
-                             HorizontalTextAlignment="Center"  
-                             FontSize="17"  
-                             HeightRequest="40"  
-                             Placeholder="Custom Entry"  
-                             PlaceholderColor="Gray"  
-                             TextColor="Black"  
-                             FontAttributes="Bold"  
-                             WidthRequest="100"/>
-        <custom:CustomEntry  
-                             CornerRadius="18"  
-                             IsCurvedCornersEnabled="True"  
-                             BorderColor="Black"      
-                             HorizontalTextAlignment="Center"  
-                             FontSize="17"  
-                             HeightRequest="40"  
-                             Placeholder="Custom Entry"  
-                             PlaceholderColor="Gray"  
-                             TextColor="Black"  
-                             FontAttributes="Bold"  
-                             WidthRequest="100"/>
+        <Image Source="image_1.png" Margin="275,0,0,25">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                
+                NumberOfTapsRequired="1" 
+                    Tapped="OnImageNameTapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+      
+
+
 
     </StackLayout>
+
+
+
+
 
 
 

@@ -28,3 +28,19 @@ C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\XamlC.s
 C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\Project.dll
 C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\ref\Project.dll
 C:\Data\New folder (11)\Project\Project\Project\obj\Debug\netstandard2.0\Project.pdb
+C:\application\Project\Project\bin\Debug\netstandard2.0\Project.deps.json
+C:\application\Project\Project\bin\Debug\netstandard2.0\Project.dll
+C:\application\Project\Project\bin\Debug\netstandard2.0\ref\Project.dll
+C:\application\Project\Project\bin\Debug\netstandard2.0\Project.pdb
+C:\application\Project\Project\obj\Debug\netstandard2.0\Project.csprojAssemblyReference.cache
+C:\application\Project\Project\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\application\Project\Project\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\application\Project\Project\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\application\Project\Project\obj\Debug\netstandard2.0\Project.AssemblyInfoInputs.cache
+C:\application\Project\Project\obj\Debug\netstandard2.0\Project.AssemblyInfo.cs
+C:\application\Project\Project\obj\Debug\netstandard2.0\Project.csproj.CoreCompileInputs.cache
+C:\application\Project\Project\obj\Debug\netstandard2.0\XamlC.stamp
+C:\application\Project\Project\obj\Debug\netstandard2.0\Project.dll
+C:\application\Project\Project\obj\Debug\netstandard2.0\ref\Project.dll
+C:\application\Project\Project\obj\Debug\netstandard2.0\Project.pdb
+C:\application\Project\Project\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
