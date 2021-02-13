@@ -7,7 +7,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Project.Droid;
-using Project.NewFolder;
+using Project.ForEntry;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -18,6 +18,11 @@ namespace Project
 			get => AppSettings.GetValueOrDefault("Username", "");
 			set => AppSettings.AddOrUpdateValue("Username", value);
 		}
+		public static string Email
+		{
+			get => AppSettings.GetValueOrDefault("Email", "");
+			set => AppSettings.AddOrUpdateValue("Email", value);
+		}
 		public static string Password
 		{
 			get => AppSettings.GetValueOrDefault("Password", "");

@@ -2,10 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             
-             xmlns:custom="clr-namespace:Project.NewFolder"
+             xmlns:custom="clr-namespace:Project.ForEntry"
              x:Class="Project.Views.LoginPage"
-             
-            >
+             xmlns:Models ="clr-namespace:Project.Models" xmlns:local="clr-namespace:Project.Helpers.Validators">
+    <ContentPage.BindingContext>
+        <Models:LoginViewModel/>
+    </ContentPage.BindingContext>
     <StackLayout  Padding="3" BackgroundColor="White">
         <StackLayout Orientation="Vertical" >
             <Grid HeightRequest="350"
@@ -41,9 +43,17 @@
                              Text="{Binding Username}"
                              PlaceholderColor="#A1A1A1"
                              TextColor="Black"  
-                             FontAttributes="Bold"
-                            
-                />
+                             FontAttributes="Bold" >
+
+                    <custom:CustomEntry.Behaviors>
+
+                        <local:EmailValidatorBehavior />
+                    </custom:CustomEntry.Behaviors>
+
+                </custom:CustomEntry>
+               
+               
+
             </Grid>
             <Grid HeightRequest="60"
                   HorizontalOptions="Center"
@@ -62,7 +72,14 @@
                              PlaceholderColor="#A1A1A1"
                              TextColor="Black"  
                              FontAttributes="Bold"  
-                             WidthRequest="100"/>
+                             WidthRequest="100">
+                <custom:CustomEntry.Behaviors>
+
+                    <local:PasswordValidationBehavior />
+
+                </custom:CustomEntry.Behaviors>
+                </custom:CustomEntry>
+
             </Grid>
 
             <StackLayout Orientation="Vertical"
@@ -90,7 +107,7 @@
                         TextColor="Black"
                     BorderColor="#D9D9D9"
                 BackgroundColor="White"
-                            Clicked="Login_OnClicked"
+                             CommandParameter="Login"
                         Command="{Binding LoginCommand}"
                         Text="SignIn" FontFamily="Regular" FontAttributes="Bold">
                     </Button>
@@ -113,6 +130,7 @@
                         TextColor="Black"
                     BorderColor="#D9D9D9"
                 BackgroundColor="White"
+                             Clicked="Signup"
                         Text="SignUp">
 
                     </Button>
@@ -129,6 +147,7 @@
                         HeightRequest="50"
                         BorderWidth="1"
                 x:Name="ShopIDSubmit3"
+                     Clicked="Guest"
                         TextColor="Black"
                     BorderColor="#D9D9D9"
                 BackgroundColor="White"

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Project.Views.Home">
 
-    <StackLayout  Padding="3" BackgroundColor="White">
+        <StackLayout  Padding="3" BackgroundColor="White">
             <StackLayout Orientation="Vertical" >
                 <Grid HeightRequest="400"
                   HorizontalOptions="Center"
@@ -21,15 +21,15 @@
                        FontSize="17"  HorizontalOptions="Center"
                     MaxLines="2"
                        Margin="0,250,0,0" FontAttributes="Bold" />
-                   
+
                 </Grid>
             </StackLayout>
 
 
 
-      
+
 
         </StackLayout>
 
 
-</ContentPage>
+    </ContentPage>

@@ -1495,3 +1495,4 @@ C:\application\Project\Project.Android\obj\Debug\90\stamp\_GenerateJavaStubs.sta
 C:\application\Project\Project.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\application\Project\Project.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\application\Project\Project.Android\obj\Debug\90\res\drawable\image_1.png
+C:\application\Project\Project.Android\obj\Debug\90\res\drawable\imm.png

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:custom="clr-namespace:Project.ForEntry"
+             x:Class="Project.Views.SignUp"
+            
+            
+            
+    xmlns:Models ="clr-namespace:Project.Models"
+             xmlns:local="clr-namespace:Project.Helpers.Validators"
+             Visual="Material"
+           
+             
+            >
+    
+    <ContentPage.BindingContext>
+        <Models:RegisterViewModel/>
+    </ContentPage.BindingContext>
+  
+    <ContentPage.Content>
+        <StackLayout   BackgroundColor="White">
+
+          
+                <Grid 
+                    
+                    Margin="285,5,0,0">
+
+
+
+
+                    <Image Source= "image.png"
+                
+       Aspect="AspectFit"
+       ></Image>
+                </Grid>
+            <Label Text="Create Account" FontSize="Title"  HorizontalOptions="Center"
+                       Margin="0,0,0,30" />
+
+
+
+
+
+            <StackLayout Orientation="Vertical" 
+                           
+                         HeightRequest="550
+                         
+                         "
+                         Spacing="20" Margin="0,0,0,95" 
+                        >
+                <Grid HeightRequest="55"
+                  HorizontalOptions="Center"
+                      WidthRequest="320"
+                      
+                  >
+
+                    <custom:CustomEntry  
+                             CornerRadius="5"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="#EFEFEF"     
+                             FontSize="17"  
+                             HeightRequest="50"  
+                    BackgroundColor="#EFEFEF"
+                    x:Name="nameEntry"
+                             Placeholder="Name"
+                             Text="{Binding Username}"
+                             PlaceholderColor="#A1A1A1"
+                             TextColor="Black"  
+                             FontAttributes="Bold"/>
+
+
+
+                </Grid>
+                <Grid HeightRequest="60"
+                  HorizontalOptions="Center"
+                      WidthRequest="320"
+                      
+                  >
+
+                    <custom:CustomEntry  
+                             CornerRadius="5"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="#EFEFEF"     
+                             FontSize="17"  
+                             HeightRequest="50"  
+                    BackgroundColor="#EFEFEF"
+                    
+                             Placeholder="Email or Phone number.."
+                             Text="{Binding Emai}"
+                             PlaceholderColor="#A1A1A1"
+                             TextColor="Black"  
+                             FontAttributes="Bold"
+                            
+                >
+                    <custom:CustomEntry.Behaviors>
+
+                            <local:EmailValidatorBehavior />
+                            </custom:CustomEntry.Behaviors>
+
+                    </custom:CustomEntry>
+
+                   
+                    
+                </Grid>
+                <Grid HeightRequest="60"
+                  HorizontalOptions="Center"
+                      WidthRequest="320"
+                   
+                  >
+                    <custom:CustomEntry  
+                              CornerRadius="5"  
+                             IsCurvedCornersEnabled="True"  
+                                BorderColor="#EFEFEF"    
+                             FontSize="17"  
+                             HeightRequest="50" 
+                        x:Name="txtpassword"
+                    Text="{Binding Password}" 
+                    IsPassword="True"
+                      BackgroundColor="#EFEFEF"
+                             Placeholder="Password"  
+                             PlaceholderColor="#A1A1A1"
+                             TextColor="Black"  
+                             FontAttributes="Bold"  
+                             WidthRequest="100">
+                        <custom:CustomEntry.Behaviors>
+                         
+                                <local:PasswordValidationBehavior />
+                            
+                        </custom:CustomEntry.Behaviors>
+                    </custom:CustomEntry>
+                   
+                </Grid>
+               
+                <Grid HeightRequest="60"
+                  HorizontalOptions="Center"
+                      WidthRequest="320"
+                      
+                  >
+
+                    <custom:CustomEntry  
+                             CornerRadius="5"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="#EFEFEF"     
+                             FontSize="17"  
+                             HeightRequest="50"  
+                    BackgroundColor="#EFEFEF"
+                     IsPassword="True"
+                             Placeholder="ConfirmPassword"
+                            
+                             PlaceholderColor="#A1A1A1"
+                             TextColor="Black"  
+                             FontAttributes="Bold">
+                        <custom:CustomEntry.Behaviors>
+                            <local:PasswordValidationBehavior />
+                            <local:CompareValidationBehavior BindingContext="{x:Reference txtpassword}" Text="{Binding Text}"/>
+                        </custom:CustomEntry.Behaviors>
+                    </custom:CustomEntry>
+                  
+
+                </Grid>
+
+
+                <StackLayout Orientation="Vertical"
+                       
+                         Spacing="12
+                         ">
+                    <Grid HeightRequest="50"
+                  HorizontalOptions="Center"
+                      WidthRequest="180"
+                  >
+                        <Button BorderRadius="11"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="1"
+                            
+                x:Name="ShopIDSubmit1"
+                        TextColor="Black"
+                    BorderColor="#D9D9D9"
+                BackgroundColor="White"
+                         
+                        Command="{Binding RegisterCommand}"
+                                 CommandParameter="SignUp"
+                        Text="SignIn" FontFamily="Regular" FontAttributes="Bold">
+                        </Button>
+
+                    </Grid>
+
+
+                </StackLayout>
+
+
+            </StackLayout>
+
+
+          
+
+            
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

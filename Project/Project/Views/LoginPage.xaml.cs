@@ -17,20 +17,23 @@ namespace Project.Views
 
         public LoginPage()
         {
-            //var vm = new LoginViewModel();
-            //this.BindingContext = vm;
+            
 
             InitializeComponent();
+            this.BindingContext = new LoginViewModel();
         }
 
 
-        public async void Login_OnClicked(object sender, EventArgs e)
+      
+        public async void Guest(object sender, EventArgs e)
         {
-             var vm = new LoginViewModel();
-             this.BindingContext = vm;
-           
-          //  vm.LoginCommand.Execute(null);
+
             Navigation.PushModalAsync(new Home());
+        }
+        public async void Signup(object sender, EventArgs e)
+        {
+
+            Navigation.PushModalAsync(new SignUp());
         }
 
     }

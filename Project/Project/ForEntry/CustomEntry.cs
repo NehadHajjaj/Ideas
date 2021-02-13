@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace Project.NewFolder
+namespace Project.ForEntry
 {
     public class CustomEntry : Entry  
   {  

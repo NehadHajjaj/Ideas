@@ -1,5 +1,6 @@
 ﻿using System.Windows.Input;
 using Project.Services;
+using Project.Views;
 using Xamarin.Forms;
 
 namespace Project.Models
@@ -12,22 +13,29 @@ namespace Project.Models
 		{
 			Username = Settings.Username;
 			Password = Settings.Password;
+			LoginCommand = new Command<string>((arg) => OpenPage(arg));
 		}
 
 		public string Username { get; set; }
 		public string Password { get; set; }
-
-		public ICommand LoginCommand
+		public ICommand LoginCommand { get; set; }
+	
+		private async void OpenPage(string value)
 		{
-			get
-			{
-				return new Command(async () =>
-				{
-					var accessToken = await _apiService.LoginAsync(Username, Password);
+			var accessToken = await _apiService.LoginAsync(Username, Password);
 
-					Settings.AccessToken = accessToken;
-				});
-			}
+			Settings.AccessToken = accessToken;
+
+			//await App.Current.MainPage.DisplayAlert("Welcome", "", "Ok");
+
+
+			await Application.Current.MainPage.Navigation.PushModalAsync(new Home());
+
+			
+			
+
+			
 		}
 	}
+	
 }
