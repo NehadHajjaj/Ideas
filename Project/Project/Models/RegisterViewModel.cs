@@ -21,22 +21,32 @@ namespace Project.Models
             RegisterCommand = new Command<string>((arg) => OpenPage(arg));}
         private async void OpenPage(string value)
         {
-            var isRegistered = await _apiService.RegisterUserAsync(Username, Email, Password);
-            //Settings.Email = Email;
-            // Settings.Username = Username;
-            // Settings.Password = Password;
-
-            if (isRegistered)
+            if ( string.IsNullOrWhiteSpace(Username) || string.IsNullOrWhiteSpace(Email) || string.IsNullOrWhiteSpace(Password) || string.IsNullOrWhiteSpace(ConfirmPassword))
             {
-                await Application.Current.MainPage.Navigation.PushModalAsync(new Home());
+                await App.Current.MainPage.DisplayAlert("Error", "Please Fill the Fields", "Ok");
+           
+            } 
+            else {
+                var isRegistered = await _apiService.RegisterUserAsync(Username ,Email, Password, ConfirmPassword);
+                //Settings.Email = Email;
+                // Settings.Username = Username;
+                // Settings.Password = Password;
 
+                if (isRegistered)
+                {
+                    await Application.Current.MainPage.Navigation.PushModalAsync(new Home());
+
+                }
+                else
+                {
+                    await App.Current.MainPage.DisplayAlert("sorry! try again", "", "Ok");
+
+                    await Application.Current.MainPage.Navigation.PushModalAsync(new SignUp());
+
+                }
             }
-            else
-            {
+        }
                
-                await Application.Current.MainPage.Navigation.PushModalAsync(new SignUp());
-
-            }
         }
         }
 
@@ -44,4 +54,4 @@ namespace Project.Models
 
 
     //public event PropertyChangedEventHandler PropertyChanged;
-    }
+    

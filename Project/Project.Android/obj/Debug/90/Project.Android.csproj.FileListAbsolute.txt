@@ -1046,7 +1046,11 @@ C:\application\Project\Project.Android\obj\Debug\90\res\mipmap-xxhdpi\icon.png
 C:\application\Project\Project.Android\obj\Debug\90\res\mipmap-xxhdpi\launcher_foreground.png
 C:\application\Project\Project.Android\obj\Debug\90\res\mipmap-xxxhdpi\icon.png
 C:\application\Project\Project.Android\obj\Debug\90\res\mipmap-xxxhdpi\launcher_foreground.png
+C:\application\Project\Project.Android\obj\Debug\90\res\drawable\image_1.png
 C:\application\Project\Project.Android\obj\Debug\90\res\drawable\image.png
+C:\application\Project\Project.Android\obj\Debug\90\res\drawable\imm.png
+C:\application\Project\Project.Android\obj\Debug\90\res\drawable\ic_eye.png
+C:\application\Project\Project.Android\obj\Debug\90\res\drawable\ic_eye_hide.png
 C:\application\Project\Project.Android\obj\Debug\90\uploadflags.txt
 C:\application\Project\Project.Android\obj\Debug\90\resolvedassemblies.hash
 C:\application\Project\Project.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
@@ -1494,5 +1498,3 @@ C:\application\Project\Project.Android\obj\Debug\90\stamp\_ConvertResourcesCases
 C:\application\Project\Project.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\application\Project\Project.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\application\Project\Project.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\application\Project\Project.Android\obj\Debug\90\res\drawable\image_1.png
-C:\application\Project\Project.Android\obj\Debug\90\res\drawable\imm.png

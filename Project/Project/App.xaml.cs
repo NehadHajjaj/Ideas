@@ -11,8 +11,14 @@ namespace Project
         {
            
             InitializeComponent();
-
-            MainPage = new LoginPage();
+            Device.SetFlags(new string[]
+{   "RadioButton_Experimental",
+    "AppTheme_Experimental",
+    "Markup_Experimental",
+    "Expander_Experimental"
+    });
+            MainPage = new MainPage();
+           
 
         }
 

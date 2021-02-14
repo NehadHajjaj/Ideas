@@ -7,7 +7,8 @@
             
             
     xmlns:Models ="clr-namespace:Project.Models"
-             xmlns:local="clr-namespace:Project.Helpers.Validators"
+             xmlns:local="clr-namespace:Project.Helpers.Validators" 
+             xmlns:local1="clr-namespace:ShowHidePasswordTrigger"
              Visual="Material"
            
              
@@ -45,7 +46,7 @@
                          HeightRequest="550
                          
                          "
-                         Spacing="20" Margin="0,0,0,95" 
+                         Spacing="20" Margin="0" Padding="0" 
                         >
                 <Grid HeightRequest="55"
                   HorizontalOptions="Center"
@@ -85,7 +86,7 @@
                     BackgroundColor="#EFEFEF"
                     
                              Placeholder="Email or Phone number.."
-                             Text="{Binding Emai}"
+                             Text="{Binding Email}"
                              PlaceholderColor="#A1A1A1"
                              TextColor="Black"  
                              FontAttributes="Bold"
@@ -101,12 +102,16 @@
                    
                     
                 </Grid>
-                <Grid HeightRequest="60"
+               
+                <StackLayout 
+                       Orientation="Horizontal"
+                    Padding="45,0,0,0">
+                    <Grid HeightRequest="60"
                   HorizontalOptions="Center"
                       WidthRequest="320"
                    
                   >
-                    <custom:CustomEntry  
+                        <custom:CustomEntry  
                               CornerRadius="5"  
                              IsCurvedCornersEnabled="True"  
                                 BorderColor="#EFEFEF"    
@@ -114,22 +119,26 @@
                              HeightRequest="50" 
                         x:Name="txtpassword"
                     Text="{Binding Password}" 
-                    IsPassword="True"
+                         IsPassword="True"
+                   
                       BackgroundColor="#EFEFEF"
                              Placeholder="Password"  
                              PlaceholderColor="#A1A1A1"
                              TextColor="Black"  
                              FontAttributes="Bold"  
                              WidthRequest="100">
-                        <custom:CustomEntry.Behaviors>
-                         
+                            <custom:CustomEntry.Behaviors>
+
                                 <local:PasswordValidationBehavior />
-                            
-                        </custom:CustomEntry.Behaviors>
-                    </custom:CustomEntry>
-                   
-                </Grid>
+
+                            </custom:CustomEntry.Behaviors>
+                        </custom:CustomEntry>
+
+
+                    </Grid>
                
+            
+                </StackLayout>
                 <Grid HeightRequest="60"
                   HorizontalOptions="Center"
                       WidthRequest="320"
@@ -145,13 +154,13 @@
                     BackgroundColor="#EFEFEF"
                      IsPassword="True"
                              Placeholder="ConfirmPassword"
-                            
+                            Text="{Binding ConfirmPassword}"
                              PlaceholderColor="#A1A1A1"
                              TextColor="Black"  
                              FontAttributes="Bold">
                         <custom:CustomEntry.Behaviors>
                             <local:PasswordValidationBehavior />
-                            <local:CompareValidationBehavior BindingContext="{x:Reference txtpassword}" Text="{Binding Text}"/>
+                            <local:CompareValidationBehavior BindingContext="{x:Reference txtpassword}" Text="{Binding ConfirmPassword}"/>
                         </custom:CustomEntry.Behaviors>
                     </custom:CustomEntry>
                   
@@ -161,11 +170,33 @@
 
                 <StackLayout Orientation="Vertical"
                        
-                         Spacing="12
+                         Spacing="10
                          ">
+                    <StackLayout
+                         HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                 
+                            <RadioButton   
+                      GroupName="Remember"   
+                            IsChecked="False"   
+                         />
+
+                        <Label Text="Student"  FontSize="15" Margin="0,0,80,0" Padding="0,3,0,0" 
+                      />
+                        
+
+                        <RadioButton   
+                          GroupName="Remember"   
+                            IsChecked="False"   
+                      />
+                        <Label Text="Adviser" 
+                               FontSize="15"
+                                Padding="0" Margin="0,1,0,0"
+                     />
+                    </StackLayout>
                     <Grid HeightRequest="50"
                   HorizontalOptions="Center"
-                      WidthRequest="180"
+                      WidthRequest="180" Padding="0,20,0,0"
                   >
                         <Button BorderRadius="11"
                         WidthRequest="50"
@@ -178,8 +209,8 @@
                 BackgroundColor="White"
                          
                         Command="{Binding RegisterCommand}"
-                                 CommandParameter="SignUp"
-                        Text="SignIn" FontFamily="Regular" FontAttributes="Bold">
+                                 CommandParameter="Sign Up"
+                        Text="SignUP" FontFamily="Regular" FontAttributes="Bold" Padding="0">
                         </Button>
 
                     </Grid>
@@ -190,13 +221,7 @@
 
             </StackLayout>
 
-
-          
-
-            
-
-
-
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

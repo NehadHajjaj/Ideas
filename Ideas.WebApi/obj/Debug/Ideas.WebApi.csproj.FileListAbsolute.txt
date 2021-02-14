@@ -200,6 +200,9 @@ C:\application\Ideas.WebApi\bin\System.Web.WebPages.Deployment.dll
 C:\application\Ideas.WebApi\bin\System.Web.WebPages.dll
 C:\application\Ideas.WebApi\bin\System.Web.WebPages.Razor.dll
 C:\application\Ideas.WebApi\bin\WebGrease.dll
+C:\application\Ideas.WebApi\bin\Xamarin.Forms.Core.dll
+C:\application\Ideas.WebApi\bin\Xamarin.Forms.Platform.dll
+C:\application\Ideas.WebApi\bin\Xamarin.Forms.Xaml.dll
 C:\application\Ideas.WebApi\bin\Newtonsoft.Json.xml
 C:\application\Ideas.WebApi\bin\System.Net.Http.Formatting.xml
 C:\application\Ideas.WebApi\bin\System.Web.Helpers.xml
@@ -212,6 +215,10 @@ C:\application\Ideas.WebApi\bin\System.Web.WebPages.xml
 C:\application\Ideas.WebApi\bin\System.Web.WebPages.Deployment.xml
 C:\application\Ideas.WebApi\bin\System.Web.WebPages.Razor.xml
 C:\application\Ideas.WebApi\bin\Antlr3.Runtime.pdb
+C:\application\Ideas.WebApi\bin\Xamarin.Forms.Core.pdb
+C:\application\Ideas.WebApi\bin\Xamarin.Forms.Core.xml
+C:\application\Ideas.WebApi\bin\Xamarin.Forms.Xaml.pdb
+C:\application\Ideas.WebApi\bin\Xamarin.Forms.Xaml.xml
 C:\application\Ideas.WebApi\bin\EntityFramework.xml
 C:\application\Ideas.WebApi\bin\EntityFramework.SqlServer.xml
 C:\application\Ideas.WebApi\bin\Microsoft.AspNet.Identity.Core.xml

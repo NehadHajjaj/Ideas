@@ -22,20 +22,28 @@ namespace Project.Models
 	
 		private async void OpenPage(string value)
 		{
-			var accessToken = await _apiService.LoginAsync(Username, Password);
 
-			Settings.AccessToken = accessToken;
+			if (string.IsNullOrWhiteSpace(Username) ||  string.IsNullOrWhiteSpace(Password) )
+			{
+				await App.Current.MainPage.DisplayAlert("Error", "Please Fill the Fields", "Ok");
 
-			//await App.Current.MainPage.DisplayAlert("Welcome", "", "Ok");
+			} else {
+				var accessToken = await _apiService.LoginAsync(Username, Password);
+
+				Settings.AccessToken = accessToken;
 
 
-			await Application.Current.MainPage.Navigation.PushModalAsync(new Home());
 
-			
-			
 
-			
+				await Application.Current.MainPage.Navigation.PushModalAsync(new Home());
+			}
+
+
+
+
+
+
+			}
 		}
-	}
 	
 }

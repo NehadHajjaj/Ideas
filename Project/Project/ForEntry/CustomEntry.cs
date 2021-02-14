@@ -14,22 +14,29 @@ namespace Project.ForEntry
       public Color BorderColor  
       {   get => (Color)GetValue(BorderColorProperty);   
           set => SetValue(BorderColorProperty, value);   
-      }  
-        
-      public static readonly BindableProperty BorderWidthProperty =  
+      }
+
+        [Obsolete]
+        public static readonly BindableProperty BorderWidthProperty =  
       BindableProperty.Create(nameof(BorderWidth),typeof(int),  
-          typeof(CustomEntry),Device.OnPlatform<int>(1, 2, 2));  
-      // Gets or sets BorderWidth value  
-      public int BorderWidth  
+          typeof(CustomEntry),Device.OnPlatform<int>(1, 2, 2));
+
+        // Gets or sets BorderWidth value  
+        [Obsolete]
+        public int BorderWidth  
       {  
           get =>(int)GetValue(BorderWidthProperty);   
           set => SetValue(BorderWidthProperty, value);   
-      }  
-      public static readonly BindableProperty CornerRadiusProperty =  
+      }
+
+        [Obsolete]
+        public static readonly BindableProperty CornerRadiusProperty =  
       BindableProperty.Create(nameof(CornerRadius),  
-          typeof(double),typeof(CustomEntry),Device.OnPlatform<double>(6, 7, 7));  
-      // Gets or sets CornerRadius value  
-      public double CornerRadius  
+          typeof(double),typeof(CustomEntry),Device.OnPlatform<double>(6, 7, 7));
+
+        // Gets or sets CornerRadius value  
+        [Obsolete]
+        public double CornerRadius  
       {  
           get =>(double)GetValue(CornerRadiusProperty);   
           set => SetValue(CornerRadiusProperty, value);   

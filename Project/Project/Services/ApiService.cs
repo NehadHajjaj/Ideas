@@ -13,8 +13,7 @@ namespace Project.Services
 {
 	public class ApiService
 	{
-		public async Task<bool> RegisterUserAsync(
-String username, String email, String password)
+		public async Task<bool> RegisterUserAsync(String username, String email, String password, String confirmpassword)
 		{
 		
 				//var client = new HttpClient();
@@ -23,9 +22,9 @@ String username, String email, String password)
 			var model = new RegisterBindingModel
 			{
 				Email = email,
-		
+				Username = username,
 				Password = password,
-				Username = username
+				ConfirmPassword = confirmpassword
 
 			};
 
