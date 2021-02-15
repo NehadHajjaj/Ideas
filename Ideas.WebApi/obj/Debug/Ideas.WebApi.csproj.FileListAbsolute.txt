@@ -189,6 +189,7 @@ C:\application\Ideas.WebApi\bin\Microsoft.Web.Infrastructure.dll
 C:\application\Ideas.WebApi\bin\Newtonsoft.Json.dll
 C:\application\Ideas.WebApi\bin\Owin.dll
 C:\application\Ideas.WebApi\bin\System.Net.Http.Formatting.dll
+C:\application\Ideas.WebApi\bin\System.Numerics.Vectors.dll
 C:\application\Ideas.WebApi\bin\System.Web.Helpers.dll
 C:\application\Ideas.WebApi\bin\System.Web.Http.dll
 C:\application\Ideas.WebApi\bin\System.Web.Http.Owin.dll
@@ -200,9 +201,11 @@ C:\application\Ideas.WebApi\bin\System.Web.WebPages.Deployment.dll
 C:\application\Ideas.WebApi\bin\System.Web.WebPages.dll
 C:\application\Ideas.WebApi\bin\System.Web.WebPages.Razor.dll
 C:\application\Ideas.WebApi\bin\WebGrease.dll
+C:\application\Ideas.WebApi\bin\Xamarin.Essentials.dll
 C:\application\Ideas.WebApi\bin\Xamarin.Forms.Core.dll
 C:\application\Ideas.WebApi\bin\Xamarin.Forms.Platform.dll
 C:\application\Ideas.WebApi\bin\Xamarin.Forms.Xaml.dll
+C:\application\Ideas.WebApi\bin\System.Numerics.Vectors.xml
 C:\application\Ideas.WebApi\bin\Newtonsoft.Json.xml
 C:\application\Ideas.WebApi\bin\System.Net.Http.Formatting.xml
 C:\application\Ideas.WebApi\bin\System.Web.Helpers.xml
@@ -215,6 +218,8 @@ C:\application\Ideas.WebApi\bin\System.Web.WebPages.xml
 C:\application\Ideas.WebApi\bin\System.Web.WebPages.Deployment.xml
 C:\application\Ideas.WebApi\bin\System.Web.WebPages.Razor.xml
 C:\application\Ideas.WebApi\bin\Antlr3.Runtime.pdb
+C:\application\Ideas.WebApi\bin\Xamarin.Essentials.pdb
+C:\application\Ideas.WebApi\bin\Xamarin.Essentials.xml
 C:\application\Ideas.WebApi\bin\Xamarin.Forms.Core.pdb
 C:\application\Ideas.WebApi\bin\Xamarin.Forms.Core.xml
 C:\application\Ideas.WebApi\bin\Xamarin.Forms.Xaml.pdb

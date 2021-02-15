@@ -1,4 +1,5 @@
-﻿using Project.Views;
+﻿
+using Project.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -18,7 +19,7 @@ namespace Project
     "Expander_Experimental"
     });
             MainPage = new MainPage();
-           
+         
 
         }
 

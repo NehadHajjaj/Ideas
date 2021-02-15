@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-               xmlns:custom="clr-namespace:Project.ForEntry"
+           
              x:Class="Project.Views.SignUp"
             
-            
+                xmlns:custom="clr-namespace:Project.ForEntry"
             
     xmlns:Models ="clr-namespace:Project.Models"
              xmlns:local="clr-namespace:Project.Helpers.Validators" 
@@ -32,7 +32,9 @@
                     <Image Source= "image.png"
                 
        Aspect="AspectFit"
-       ></Image>
+       >
+                        
+                    </Image>
                 </Grid>
             <Label Text="Create Account" FontSize="Title"  HorizontalOptions="Center"
                        Margin="0,0,0,30" />

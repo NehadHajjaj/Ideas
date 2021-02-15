@@ -73,6 +73,8 @@ C:\application\Project\Project.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\application\Project\Project.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
 C:\application\Project\Project.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.pdb
 C:\application\Project\Project.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll
+C:\application\Project\Project.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\application\Project\Project.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
 C:\application\Project\Project.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
 C:\application\Project\Project.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.pdb
 C:\application\Project\Project.iOS\bin\iPhone\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
@@ -110,9 +112,7 @@ C:\application\Project\Project.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform
 C:\application\Project\Project.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 C:\application\Project\Project.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
 C:\application\Project\Project.iOS\bin\iPhone\Debug\Project.dll
-C:\application\Project\Project.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
 C:\application\Project\Project.iOS\bin\iPhone\Debug\Project.pdb
-C:\application\Project\Project.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
 C:\application\Project\Project.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
 C:\application\Project\Project.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
 C:\application\Project\Project.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items

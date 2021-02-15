@@ -1,35 +1,130 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Project.Views.Home">
+           
 
-        <StackLayout  Padding="3" BackgroundColor="White">
-            <StackLayout Orientation="Vertical" >
-                <Grid HeightRequest="400"
-                  HorizontalOptions="Center"
-                      WidthRequest="380"
-                 
-                  
-                  >
+    xmlns:custom="clr-namespace:Project.ForEntry"
+              x:Class="Project.Views.Home"
+  
+             Visual="Material"
+      
+             
+            >
+
+
+    <ContentPage.Content>
+        <StackLayout 
+        
+            BackgroundColor="White" Padding="0" Margin="0">
+            
+
+            <StackLayout
+                Orientation="Horizontal">
+                <Grid 
+                     WidthRequest="180" 
+             
+                    Margin="270,5,0,0">
+                    
                     <Image Source= "image.png"
-       Aspect="AspectFit"
-       HorizontalOptions="Center" Margin="0,0,0,70"
-                       />
-                    <Label 
-                    Text=" Home Page"
+                
+       Aspect="AspectFit">
 
-                       FontSize="17"  HorizontalOptions="Center"
-                    MaxLines="2"
-                       Margin="0,250,0,0" FontAttributes="Bold" />
+                    </Image>
+                </Grid>
+
+            </StackLayout>
+           
+
+            <StackLayout Orientation="Vertical" 
+                           
+                         HeightRequest="150"
+                         
+                        WidthRequest="100"
+                         Spacing="3" Margin="0" Padding="0" 
+                        >
+                <Label Text="Do you have an invetaion?" FontSize="Title"  HorizontalOptions="Center"
+        />
+               
+
+                    <Grid
+                          
+                        HeightRequest="60"
+                  HorizontalOptions="Center"
+                      WidthRequest="155" Padding="0,20,0,0"
+                  >
+                        <Button BorderRadius="11"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="1"
+                            
+                x:Name="ShopIDSubmit2"
+                        TextColor="Black"
+                    BorderColor="#D9D9D9"
+                BackgroundColor="#C4DBC7"          
+          Text="Inventions"
+          FontFamily="Regular"
+           FontAttributes="Bold"
+          Padding="0">
+                        </Button>
+
+                    
+
 
                 </Grid>
+
+            </StackLayout>
+            <StackLayout Orientation="Vertical" 
+                           
+                         HeightRequest="150"
+                         
+                        WidthRequest="100"
+                         Spacing="3" Margin="0" Padding="0" 
+                        >
+                <Label Text="Do you need an Idea ?" FontSize="Title"  HorizontalOptions="Center"
+        />
+
+
+                <Grid
+                          
+                        HeightRequest="60"
+                  HorizontalOptions="Center"
+                      WidthRequest="155" Padding="0,20,0,0"
+                  >
+                    <Button BorderRadius="11"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="1"
+                            
+                x:Name="ShopIDSubmit2"
+                        TextColor="Black"
+                    BorderColor="#D9D9D9"
+                BackgroundColor="#C4DBC7"          
+          Text="Idea Bank"
+          FontFamily="Regular"
+           FontAttributes="Bold"
+          Padding="0">
+                    </Button>
+
+
+
+
+                </Grid>
+
             </StackLayout>
 
 
 
 
+            <Image
+                Source="under2.png"
+                Aspect="AspectFill"
+                
+                HeightRequest="220">
 
+            </Image>
         </StackLayout>
 
+    </ContentPage.Content>
+</ContentPage>
 
-    </ContentPage>
+

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bhe3zwZe5q6ruJi8Mao85M+ZwNteIVV3NGNlZixT0iauwR27qRqJ2zj4ETs2C3yHz2XmPaskDMsb1+nmtAS98Q==",
+  "dgSpecHash": "00bzHh1pgAgkG87GP0maPl9nwx67kRtiAu14bSGEuz/bWnVv128lOMOfJBiDymGkayFebYbJ9ajV0QbL3rT5bw==",
   "success": true,
   "projectFilePath": "C:\\application\\Project\\Project\\Project.csproj",
   "expectedPackageFiles": [
@@ -58,8 +58,8 @@
     "C:\\Users\\Noor\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\Noor\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Noor\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\Noor\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Users\\Noor\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Noor\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
 }

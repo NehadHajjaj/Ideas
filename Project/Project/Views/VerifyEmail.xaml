@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Views.VerifyEmail"
+             xmlns:custom="clr-namespace:Project.ForEntry">
+    <ContentPage.Content>
+        <StackLayout   BackgroundColor="White">
+
+
+            <Grid 
+                    
+                    Margin="285,5,0,0">
+
+
+
+
+                <Image Source= "image.png"   Aspect="AspectFit"  ></Image>
+     
+            </Grid>
+            <Label Text="Verification" FontSize="20" 
+                   HorizontalOptions="Center"
+                       Margin="0,0,0,30" FontAttributes="Bold" />
+            <Label Text="Please check your Email or SMS for " 
+                   FontSize="18"  HorizontalOptions="Center"
+                       Margin="0" FontAttributes="Bold" Padding="0,20,0,0" />
+            <Label Text="Verification code!"
+                   FontSize="18"  HorizontalOptions="Center"
+                   
+                       Margin="0,0,0,30" FontAttributes="Bold" Padding="0" />
+            <Label Text="Enter code here.." FontSize="17"
+                   HorizontalOptions="Center"
+                       Margin="0,0,0,20" FontAttributes="Bold" TextColor="#999999" />
+
+            <Grid HeightRequest="44"
+                  HorizontalOptions="Center"
+                      WidthRequest="200" Padding="0" Margin="0"
+                      
+                  >
+
+                <custom:CustomEntry  
+                             CornerRadius="5"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="#EFEFEF"     
+                             FontSize="17"  
+                             HeightRequest="50"  
+                    BackgroundColor="#EFEFEF"
+                             Text="{Binding Code}"
+                             PlaceholderColor="#A1A1A1"
+                             TextColor="Black"  
+                             FontAttributes="Bold"
+                            
+                />
+            </Grid>
+
+
+            <StackLayout Orientation="Vertical"
+                       
+                         Spacing="20 " 
+                         
+                         
+                        Padding="0,60,0,0">
+                    <Grid HeightRequest="50"
+                  HorizontalOptions="Center"
+                      WidthRequest="180"
+                  >
+                        <Button BorderRadius="11"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="1"
+                            
+                x:Name="ShopIDSubmit1"
+                        TextColor="Black"
+                    BorderColor="#D9D9D9"
+                BackgroundColor="White"
+                          
+                        Command="{Binding LoginCommand}"
+                        Text="Next" FontFamily="Regular" FontAttributes="Bold">
+                        </Button>
+
+                    </Grid>
+                    <Grid HeightRequest="50"
+                  HorizontalOptions="Center"
+                      WidthRequest="180"
+                  >
+                        <Button BorderRadius="11"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        BorderWidth="1"
+                            
+                x:Name="ShopIDSubmit2"
+                        TextColor="Black"
+                    BorderColor="#D9D9D9"
+                BackgroundColor="White"
+                          
+                        Command="{Binding LoginCommand}"
+                        Text=" Resend code" FontFamily="Regular" FontAttributes="Bold">
+                        </Button>
+
+                    </Grid>
+
+
+                </StackLayout>
+
+
+            
+
+
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

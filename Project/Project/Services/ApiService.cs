@@ -34,8 +34,8 @@ namespace Project.Services
 
 			httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
-			var response = await client.PostAsync(
-				Constants.BaseApiAddress + "api/Account/Register", httpContent);
+			var response = await client.PostAsync(Constants.BaseApiAddress + "api/Account/Register", httpContent);
+
 			Debug.WriteLine(response.IsSuccessStatusCode);
 		
 			if (response.IsSuccessStatusCode)
