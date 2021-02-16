@@ -28,12 +28,12 @@ namespace Project.Views
         public async void Guest(object sender, EventArgs e)
         {
 
-            Navigation.PushModalAsync(new Home());
+            await Navigation.PushModalAsync(new Home());
         }
         public async void Signup(object sender, EventArgs e)
         {
 
-            Navigation.PushModalAsync(new SignUp());
+            await Navigation.PushModalAsync(new SignUp());
         }
 
     }

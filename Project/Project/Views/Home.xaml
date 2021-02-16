@@ -57,7 +57,7 @@
                         HeightRequest="50"
                         BorderWidth="1"
                             
-                x:Name="ShopIDSubmit2"
+                x:Name="ShopIDSubmit1"
                         TextColor="Black"
                     BorderColor="#D9D9D9"
                 BackgroundColor="#C4DBC7"          
