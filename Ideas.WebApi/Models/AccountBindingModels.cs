@@ -1,6 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using Newtonsoft.Json;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Ideas.WebApi.Models
 {
@@ -32,6 +30,19 @@ namespace Ideas.WebApi.Models
         public string ConfirmPassword { get; set; }
     }
 
+    public class ChangeEmailBindingModel
+    {
+	    [Required]
+	    [DataType(DataType.EmailAddress)]
+	    [Display(Name = "Current Email")]
+	    public string OldEmail { get; set; }
+
+	    [Required]
+	    [DataType(DataType.EmailAddress)]
+	    [Display(Name = "New email")]
+	    public string NewEmail { get; set; }
+    }
+
     public class RegisterBindingModel
     {
         [Required]
@@ -48,6 +59,10 @@ namespace Ideas.WebApi.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        public bool IsStudent { get; set; }
+
     }
 
     public class RegisterExternalBindingModel

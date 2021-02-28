@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Description;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
@@ -24,6 +26,8 @@ namespace Ideas.WebApi.Controllers
     {
         private const string LocalLoginProvider = "Local";
         private ApplicationUserManager _userManager;
+        private ApplicationDbContext db = new ApplicationDbContext();
+
 
         public AccountController()
         {
@@ -129,6 +133,35 @@ namespace Ideas.WebApi.Controllers
             {
                 return GetErrorResult(result);
             }
+
+            return Ok();
+        }
+
+        // POST api/Account/ChangeEmail
+        [Route("ChangeEmail")]
+        public async Task<IHttpActionResult> ChangeEmail(ChangeEmailBindingModel model)
+        {
+	        if (!ModelState.IsValid)
+	        {
+		        return BadRequest(ModelState);
+	        }
+
+	        var userId = User.Identity.GetUserId();
+
+            // get user object from the storage
+            var user = await UserManager.FindByIdAsync(userId);
+
+	        // change username and email
+	        user.UserName = model.NewEmail;
+	        user.Email = model.NewEmail;
+
+	        // Persist the changes
+	        await UserManager.UpdateAsync(user);
+
+	        // generate email confirmation code
+	        var emailConfirmationCode = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+
+	        await UserManager.ConfirmEmailAsync(userId, emailConfirmationCode);
 
             return Ok();
         }
@@ -336,6 +369,8 @@ namespace Ideas.WebApi.Controllers
                 return GetErrorResult(result);
             }
 
+            user.SetIsStudent(model.IsStudent);
+            await UserManager.UpdateAsync(user);
             return Ok();
         }
 
@@ -489,5 +524,31 @@ namespace Ideas.WebApi.Controllers
         }
 
         #endregion
+
+        // POST: api/Account/
+        [ResponseType(typeof(ApplicationUser))]
+        [Authorize]
+        public IHttpActionResult PostInfo(UserInfo userData)
+        {
+	        if (!ModelState.IsValid)
+	        {
+		        return BadRequest(ModelState);
+	        }
+
+	        var userId = User.Identity.GetUserId();
+
+            var user = db.Users.SingleOrDefault(x => x.Id == userId);
+
+	        if (user == null)
+	        {
+		        return null;
+	        }
+
+	        user.SetData(userData);
+
+	        db.SaveChanges();
+
+	        return CreatedAtRoute("DefaultApi", new { id = user.Id }, user);
+        }
     }
 }
