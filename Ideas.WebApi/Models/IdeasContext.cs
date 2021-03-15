@@ -19,6 +19,7 @@ namespace Ideas.WebApi.Models
 
 		public DbSet<Idea> Ideas { get; set; }
 		public DbSet<Course> Courses { get; set; }
+		public DbSet<Discussion> Discussions { get; set; }
 		public DbSet<Workshop> Workshops { get; set; }
 		public DbSet<Event> Events { get; set; }
 		public DbSet<News> News { get; set; }

@@ -121,11 +121,11 @@ C:\Data\New folder (11)\Project\Ideas.WebApi\bin\Microsoft.Owin.Security.Microso
 C:\Data\New folder (11)\Project\Ideas.WebApi\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Data\New folder (11)\Project\Ideas.WebApi\bin\System.Web.Http.Owin.xml
 C:\Data\New folder (11)\Project\Ideas.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.csproj.GenerateResource.cache
 C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.csproj.CoreCompileInputs.cache
 C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.csproj.CopyComplete
 C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.dll
 C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.pdb
 C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.csprojAssemblyReference.cache
-C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.Migrations.ApplicationDbContext.init.resources
-C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.Migrations.IdeaContext.init.resources
+C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.Migrations.IdeaContext.init1.resources
+C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.csproj.GenerateResource.cache
+C:\Data\New folder (11)\Project\Ideas.WebApi\obj\Release\Ideas.WebApi.Migrations.ApplicationDbContext.init2.resources

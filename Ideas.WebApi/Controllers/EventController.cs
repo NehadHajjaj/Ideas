@@ -18,18 +18,24 @@ namespace Ideas.WebApi.Controllers
 		// GET: api/Events/ForCurrentUser
 		[Authorize]
 		[Route("api/Events/ForCurrentUser")]
-		public IQueryable<Event> GetEventsForCurrentUser()
+		public IQueryable<EventModel> GetEventsForCurrentUser()
 		{
 			string userId = User.Identity.GetUserId();
 
-			return db.Events.Where(ev => ev.UserId == userId);
+			return db.Events.Where(ev => ev.UserId == userId).Select(x => new EventModel
+			{
+				Title = x.Title
+			});
 		}
 
 		// GET: api/Events
 		[Authorize]
-		public IQueryable<Event> GetEvents()
+		public IQueryable<EventModel> GetEvents()
 		{
-			return db.Events;
+			return db.Events.Select(x => new EventModel
+			{
+				Title = x.Title
+			}); 
 		}
 
 		// GET: api/Events/5

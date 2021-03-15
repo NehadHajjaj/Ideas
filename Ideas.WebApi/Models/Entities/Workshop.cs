@@ -1,6 +1,6 @@
 ﻿namespace Ideas.WebApi.Models.Entities
 {
-	public class Course
+	public class Workshop
 	{
 		public int Id { get; set; }
 		public string Title { get; set; }
